@@ -14,7 +14,7 @@ if trial:
     print(state)
     
 prob = []
-print(sum(state))
+
 try:
     for i in state:
         prob.append(i/sum(state))

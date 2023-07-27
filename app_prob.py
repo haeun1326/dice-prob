@@ -15,8 +15,11 @@ if trial:
     
 prob = []
 print(sum(state))
-for i in state:
-    prob.append(i/sum(state))
+try:
+    for i in state:
+        prob.append(i/sum(state))
+except:
+    pass
 print(prob)
 index = [1,2,3,4,5,6]
 
@@ -26,4 +29,3 @@ table = pd.DataFrame({'횟수': state,
 print(table)
 st.subheader('시행결과')
 st.dataframe(table)
-st.image('dice.jpg')
